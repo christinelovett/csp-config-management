@@ -7,7 +7,7 @@ steps:
   env:
   - 'KUBECONFIG=/kube/config'
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=gke_anthos-demo-259602_us-central1-b_central'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=anthos-gke'
   - 'CLOUDSDK_CONTAINER_USE_APPLICATION_DEFAULT_CREDENTIALS=true'
 - name: 'gcr.io/nomos-release/nomos:stable'
   args: ['nomos', 'vet', '--path', '/workspace']
